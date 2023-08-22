@@ -6,13 +6,14 @@ import '../styles/ProjectCard.css'
 import bitsvssig from '../images/bitsvssigma.png'
 import drones from '../images/drones.png'
 import futures from '../images/futures.png'
+import vrgame from '../images/vrgame.png'
 
 const ProjectCard = () => {
     const cardInfo = [
         {image: bitsvssig, title: 'Bits Vs Sigma', text: 'gfdgdfgdfgdf'},
         {image: drones, title: '', text: 'ffddddddddddddddddddddddd'},
         {image: futures, title: '', text: 'gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg'},
-        {image: bitsvssig, title: '', text: 'fffffffffffffffffffffffff'},
+        {image: vrgame, title: '', text: 'fffffffffffffffffffffffff'},
     ];
 
     const Render = (card, index) => {
@@ -23,7 +24,7 @@ const ProjectCard = () => {
                     <Card.Img variant="top" src = {card.image} key = {index} className='card-img'/>
                 </Button>
                 <Card.Body className='card-body'>
-                    <Card.Title>{card.title}</Card.Title>
+                    <Card.Title className='card-title'>{card.title}</Card.Title>
                     <Card.Text> {card.text}</Card.Text>        
                 </Card.Body>
             </Card>

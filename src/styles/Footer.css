@@ -3,6 +3,10 @@
     color: #fff;
     padding: 20px 0;
   }
+
+p{
+  text-transform: uppercase;
+}
   
   .footer-content {
     max-width: 1200px;

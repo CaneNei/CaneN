@@ -6,20 +6,22 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import GifDisp from './components/GifDisp';
 import ProjectDisp from './components/ProjectDisp';
+import Resume from './components/Resume';
 
 function App() {
   return (
     <div>  
      <Router>
       <Header />
-      <GifDisp />
-      <ProjectDisp />
-        <div className="App">
+      {/* {/* <GifDisp />
+      <ProjectDisp /> }
+        <div className="App"> */}
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/projects' element={<Projects />} />
         </Routes>
-        </div>
+        {/* </div> */}
+        <Resume />
         <Footer />
       </Router>    
     </div>

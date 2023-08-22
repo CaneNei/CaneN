@@ -33,6 +33,12 @@
     max-width: 400px;  
 }
 
+.card-title{
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: bold;
+}
+
 .transparent-button {
     background-color: transparent; /* Set the button background to transparent */
     border: none; /* Remove the button border */
