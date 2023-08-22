@@ -5,6 +5,7 @@ import Projects from './pages/Projects';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import GifDisp from './components/GifDisp';
+import ProjectDisp from './components/ProjectDisp';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
      <Router>
       <Header />
       <GifDisp />
+      <ProjectDisp />
         <div className="App">
         <Routes>
           <Route path='/' element={<Home />} />

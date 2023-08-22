@@ -1,0 +1,27 @@
+.title{
+    background-color:  #474973;    
+    min-height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.project-cards{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    color: white;   
+    
+    .bbb{
+        margin-top: 10px;
+    }
+}

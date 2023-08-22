@@ -1,0 +1,44 @@
+.grid {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;       
+    
+    align-items: flex-start;
+    justify-content: center;
+    
+  }
+  
+  .grid > div {
+    flex-basis: calc(50% - 40px);
+  }
+
+
+.card-img{    
+    width: 400px;
+    height: 400px;
+}
+
+.centered-card {
+    display: flex;
+    justify-content: center;    
+    align-items: center; 
+    margin-top: 5%;
+    
+  }
+
+.card-body{
+    text-align: center;
+    overflow-wrap: break-word; 
+    max-width: 400px;  
+}
+
+.transparent-button {
+    background-color: transparent; /* Set the button background to transparent */
+    border: none; /* Remove the button border */
+    padding: 0; /* Remove padding to make the image fill the button */
+}
+
+.transparent-button:hover {
+    transform: scale(1.02);
+}
