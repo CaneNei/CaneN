@@ -1,0 +1,19 @@
+.gif{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;      
+    align-items: center;
+    width: 100%;      
+    margin-top: 10px;
+    /* align-content: center;    */        
+}
+
+.image{
+    width: 450px;
+    height: 500px;
+}
+
+.text{
+    color: rgb(243, 228, 201);
+    margin-top: 10px;
+}

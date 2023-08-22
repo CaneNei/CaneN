@@ -1,0 +1,35 @@
+.Header {
+    width: 100%;
+    height: 5vh;
+    background-color: #a69cac;        
+    font-size: xx-large;     
+    text-transform: uppercase;
+    /* text-align: center;   */
+    display: flex;    
+    align-items: center;
+    justify-content: flex-start;
+    position: sticky;
+    border-radius: 5px;    
+    top: 0;
+    z-index: 1;   
+
+    .Hov{
+        text-decoration: none;
+        color: rgb(0, 0, 0);       
+    }
+
+    .Hov:hover{
+        background-color:rgba(163, 157, 223, 0.739);
+        color: white;
+    }
+}
+
+.img{
+    width: 20px;
+    height: 20px;    
+}
+
+a{    
+    text-decoration: none;
+    margin: 50px;
+}
