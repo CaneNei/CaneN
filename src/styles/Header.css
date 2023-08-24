@@ -1,6 +1,6 @@
 .Header {
     width: 100%;
-    height: 5vh;
+    height: 10vh;
     background-color: #a69cac;        
     font-size: xx-large;     
     text-transform: uppercase;
@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: flex-start;
     position: sticky;
-    border-radius: 5px;    
+    border-radius: 0px 0px 5px 5px;    
     top: 0;
     z-index: 1;   
 

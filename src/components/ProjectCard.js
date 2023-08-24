@@ -3,41 +3,56 @@ import Card from 'react-bootstrap/Card'
 import Balancer from 'react-wrap-balancer'
 import Button from 'react-bootstrap/Button'
 import '../styles/ProjectCard.css'
-import bitsvssig from '../images/bitsvssigma.png'
-import drones from '../images/drones.png'
-import futures from '../images/futures.png'
-import vrgame from '../images/vrgame.png'
+import {cardInfo} from '../ProjList/projectList.js'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 
-const ProjectCard = () => {
-    const cardInfo = [
-        {image: bitsvssig, title: 'Bits Vs Sigma', text: 'gfdgdfgdfgdf'},
-        {image: drones, title: '', text: 'ffddddddddddddddddddddddd'},
-        {image: futures, title: '', text: 'gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg'},
-        {image: vrgame, title: '', text: 'fffffffffffffffffffffffff'},
-    ];
+// const ProjectCard = () => {
+//        const Render = (card, id) => {
+//         return(
+//             <div className='centered-card'>
+//             <Card>
+//                 {/* <Button variant="link" onClick={() => handleButtonClick(card)} className='transparent-button'> */}
+//                 {/* <div onClick={() =>{Navigate('/project/'+id)}}> */}
+//                 <Link to={'/project'}>
+//                     <Card.Img variant="top" src = {card.image} key = {id} className='card-img'/>
+//                 </Link>
+                
+//                 {/* </Button> */}
+//                 <Card.Body className='card-body'>
+//                     <Card.Title className='card-title'>{card.title}</Card.Title>
+//                     <Card.Text> {card.text}</Card.Text>        
+//                 </Card.Body>
+//                 {/* </div> */}
+//             </Card>
+//             </div>
+            
+//         );
+//     }
 
-    const Render = (card, index) => {
-        return(
-            <div className='centered-card'>
-            <Card>
-                <Button variant="link" onClick={() => handleButtonClick(card)} className='transparent-button'>
-                    <Card.Img variant="top" src = {card.image} key = {index} className='card-img'/>
-                </Button>
-                <Card.Body className='card-body'>
-                    <Card.Title className='card-title'>{card.title}</Card.Title>
-                    <Card.Text> {card.text}</Card.Text>        
-                </Card.Body>
-            </Card>
-            </div>
-        );
-    }
-    
-    const handleButtonClick = (card) => {
-        // Handle button click logic for the specific card here
-    };
+//   return <div className = 'grid'>{cardInfo.map(Render,)}</div>
+function ProjectCard({image, title, text, id}){    
+    const Navigate = useNavigate();
+     return(
+         <div className='centered-card'>
+         <Card>
+             {/* <Button variant="link" onClick={() => handleButtonClick(card)} className='transparent-button'> */}
+             <div onClick={() =>{Navigate('/project/'+id)}}>
+             {/* <Link to={'/project'}> */}
 
-  return <div className = 'grid'>{cardInfo.map(Render)}</div>
-  
-}
+                 <Card.Img variant="top" src = {image} className='card-img'/>
+             {/* </Link> */}
+             </div>
+             {/* </Button> */}
+             <Card.Body className='card-body'>
+                 <Card.Title className='card-title'>{title}</Card.Title>
+                 <Card.Text> {text}</Card.Text>        
+             </Card.Body>
+             {/* </div> */}
+         </Card>
+         </div>
+         
+     );
+ }  
+
 
 export default ProjectCard

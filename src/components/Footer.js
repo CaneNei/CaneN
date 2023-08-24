@@ -6,10 +6,9 @@ function Footer() {
     <div className='site-footer'>
         <div>
             <p>
-                &copy; 2023 Cane Neilson
-            </p>
-        </div>
-        <div> <p> caneneil24@gmail.com</p></div>
+                &copy; 2023 Cane Neilson | caneneil24@gmail.com
+            </p>            
+        </div>        
     </div>
   )
 }

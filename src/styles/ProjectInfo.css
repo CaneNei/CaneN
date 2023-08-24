@@ -1,0 +1,31 @@
+.moreInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    width: auto;
+    color: white;
+    margin-top: 2%;
+}
+
+.imageproj{
+    width: 500px;
+    height: 300px;
+    border: 10px solid;
+    border-color: green;
+}
+
+.textbox{
+    width: 60%;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.LinkIcon{
+    color: white;
+}
+
+.LinkIcon:hover{
+    color: rgb(206, 118, 206);
+    transform: scale(1.1);
+}

@@ -7,6 +7,10 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: xx-large;
+    
 }
 
 .project-cards{
@@ -25,3 +29,12 @@
         margin-top: 10px;
     }
 }
+
+
+
+.title ul {
+    list-style: disc; /* Add bullet points */
+    padding-left: 20px; /* Adjust spacing from the bullet points */
+    margin: 0;
+    text-align: left;
+  }
