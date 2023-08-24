@@ -29,3 +29,15 @@
     color: rgb(206, 118, 206);
     transform: scale(1.1);
 }
+
+.hashtag{
+    background-color: #474973;
+    border-radius: 50px;
+    max-height: 40px;
+    min-width: 450px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

@@ -9,9 +9,10 @@ function Projects() {
   const {id} = useParams();
   const project = cardInfo[id];
   return (
-    <div className='moreInfo'>      
+    <div className='moreInfo' style={{ whiteSpace: 'pre' }}>      
       <img src={project.gif} className='imageproj'/>      
       <h1 className='textbox'>{project.title}</h1>
+      <p className='hashtag'>{project.hashtags}</p>
       <p className='textbox'>{project.info}</p> 
       <Link to={project.link} className='LinkIcon' target='_blank'>
         <i class="devicon-github-original" style={{fontSize:80}}></i> <br></br>    

@@ -32,11 +32,16 @@ import { Link, Navigate, useNavigate } from 'react-router-dom'
 //   return <div className = 'grid'>{cardInfo.map(Render,)}</div>
 function ProjectCard({image, title, text, id}){    
     const Navigate = useNavigate();
+
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+
      return(
          <div className='centered-card'>
          <Card>
              {/* <Button variant="link" onClick={() => handleButtonClick(card)} className='transparent-button'> */}
-             <div onClick={() =>{Navigate('/project/'+id)}}>
+             <div onClick={() =>{Navigate('/project/'+id); handleScrollToTop()}}>
              {/* <Link to={'/project'}> */}
 
                  <Card.Img variant="top" src = {image} className='card-img'/>
