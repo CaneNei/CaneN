@@ -46,5 +46,12 @@ export const cardInfo = [
     'Implmeneted the AI and state machine elements',
     'Designed the initial concept and difficulty progression systems',
     'Impemented objects physics and throwing mechanics',
-    'Created and implemented partical effects assets'], info: 'hi im info', link:'', hashtags:'#VR  #Group-Project  #AI  #Design  #C-Sharp  #3D-Modelling  #Physics'}
+    'Created and implemented partical effects assets'], info: `This VR game was a project made for university
+     to introduce students to VR development. I worked on this game as part of a 4-man group and created a 
+     game where the player would play as a dishwasher, catching plates thrown to them by a robot waiter and 
+     placing them into dish washer. I created the initial design and concept and implemented the AI behaviours
+      of the robot waiter, to move around and pick up plates to throw at the player. I also modelled and 
+      animated the waiter NPC, and implemented the particle effects in the game as well as making the plate
+       breaking effect. In addition to this I used Bezier curves to calculate a plates flight path and worked 
+        on the plates physics systems.`, link:'', hashtags:'#VR  #Group-Project  #AI  #Design  #C-Sharp  #3D-Modelling  #Physics'}
 ]
